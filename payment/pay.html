@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pay.css">
+    
+    <title>Payment</title>
+</head>
+<body>
+  <div class="overlay"></div> 
+  <div class="area" >
+
+    <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+    </ul>
+
+    <div class="modal">
+        <form class="form">
+          <div class="payment--options">
+        </svg>
+            </button>
+          </div>
+          <div class="separator">
+            <hr class="line">
+            <h2 class="headline-1 section-title"> Payment </h2>
+            <hr class="line">
+          </div>
+          <div class="credit-card-info--form">
+            <div class="input_container">
+              <label for="password_field" class="input_label">Card Holder full name</label>
+              <input id="password_field" class="input_field" type="text" name="input-name" title="Inpit title" placeholder="name">
+            </div>
+            <div class="input_container">
+              <label for="password_field" class="input_label">Card Number</label>
+              <input id="password_field" class="input_field" type="number" name="input-name" title="Inpit title" placeholder="0000 0000 0000 0000">
+            </div>
+            <div class="input_container">
+              <label for="password_field" class="input_label">Amount</label>
+              <input id="password_field" class="input_field" type="number" name="input-name" title="Inpit title" placeholder="123,45 EGP">
+            </div>
+            <div class="input_container">
+              <label for="payment_type" class="input_label">Payment Type</label>
+              <select id="payment_type" class="input_field" name="payment_type">
+                  <option value="debit_card" selected>Select Payment Type</option>
+                  <option value="credit_card">Credit Card</option>
+                  <option value="debit_card">Debit Card</option>
+              </select>
+          </div>
+            <div class="input_container">
+              <label for="password_field" class="input_label">Expiry Date / CVV</label>
+              <div class="split">
+              <input id="password_field" class="input_field" type="text" name="input-name" title="Expiry Date" placeholder="01/23">
+              <input id="password_field" class="input_field" type="number" name="cvv" title="CVV" placeholder="CVV">
+            </div>
+            </div>
+          </div>
+          <center>
+            <button class="purchase--btn">Checkout</button>
+          </center>
+        </form>
+        </div>
+
+        <br>
+        <br>
+        <br>
+</div>  
+
+<script>
+  const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+
+modal.addEventListener('click', () => {
+    modal.classList.toggle('clicked');
+});
+
+</script>
+</body>
+</html>

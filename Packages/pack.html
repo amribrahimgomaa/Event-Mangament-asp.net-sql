@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages</title>
+  <link rel="stylesheet" href="pack.css">
+</head>
+<body>
+
+<div class="area" >
+
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+
+    <div class="container">
+
+      <div class="title">
+        Pick Your Event
+      </div>
+
+      <hr>
+
+      <form action="#">
+        <div class="user-details">
+
+          <div class="input-box">
+            <span class="details">Full Name </span> 
+            <input type="text" placeholder="Enter Full Name" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Address </span> 
+            <input type="text" placeholder="City, street, house num" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Phone Number </span> 
+            <input type="tel" placeholder="Enter your Number" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Email </span> 
+            <input type="email" placeholder="Enter active Email" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details"> Event Date </span> 
+            <input type="date" placeholder="Enter your Number" required>
+          </div>
+
+          <div class="input-box">
+            <select name="event" id="event-type" onchange="showButtons(this.value)" required>
+              <option value="" disabled selected>Event Type?</option>
+              <option value="wedding">Wedding</option>
+              <option value="engagement">Engagement</option>
+              <option value="birthday">Birthday</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="formal">Formal</option>
+            </select>
+          </div>
+          
+          <div class="buttons" id="buttons-wed" style="display: none;">
+            <h3>Choose Your <span>Wedding</span> Package</h3>
+            <select name="wedding-package" id="wedding-package">
+              <option value="elegance">Elegance</option>
+              <option value="enchanted">Enchanted</option>
+              <option value="celestial">Celestial</option>
+              <option value="lovebirds">Lovebirds</option>
+              <option value="bridal-bliss">Bridal Bliss</option>
+              <option value="grand-gala">Grand Gala</option>
+            </select>
+          </div>
+          
+          <div class="buttons" id="buttons-engage" style="display: none;">
+            <h3>Choose Your <span>Engagement</span> Package</h3>
+            <select name="engagement-package" id="engagement-package">
+              <option value="elegance">Elegance</option>
+              <option value="enchanted">Enchanted</option>
+              <option value="celestial">Celestial</option>
+              <option value="lovebirds">Lovebirds</option>
+              <option value="bridal-bliss">Bridal Bliss</option>
+              <option value="grand-gala">Grand Gala</option>
+            </select>
+          </div>
+          
+          <div class="buttons" id="buttons-ann" style="display: none;">
+            <h3>Choose Your <span>Anniversary</span> Package</h3>
+            <select name="anniversary-package" id="anniversary-package">
+              <option value="joybash">JoyBash</option>
+              <option value="bliss-fete">Bliss-Fete</option>
+              <option value="cheerchic">CheerChic</option>
+              <option value="happy-hoopla">Happy-Hoopla</option>
+              <option value="fun-fiesta">Fun Fiesta</option>
+              <option value="gala-glee">GalaGlee</option>
+            </select>
+          </div>
+
+          <div class="buttons" id="buttons-birth" style="display: none;">
+            <h3>Choose Your <span>Birthday</span> Package</h3>
+            <select name="anniversary-package" id="anniversary-package">
+              <option value="joybash">JoyBash</option>
+              <option value="bliss-fete">Bliss-Fete</option>
+              <option value="cheerchic">CheerChic</option>
+              <option value="happy-hoopla">Happy-Hoopla</option>
+              <option value="fun-fiesta">Fun Fiesta</option>
+              <option value="gala-glee">GalaGlee</option>
+            </select>
+          </div>
+          
+          <div class="buttons" id="buttons-formal" style="display: none;">
+            <h3>Choose Your <span>Formal</span> Package</h3>
+            <select name="formal-package" id="formal-package">
+              <option value="black-tie-bliss">Black-Tie Bliss</option>
+              <option value="prestige">Prestige</option>
+              <option value="opulence">Opulence</option>
+              <option value="grandeur">Grandeur</option>
+              <option value="luxe">Luxe</option>
+              <option value="elite">Elite</option>
+            </select>
+          </div> 
+      
+        </div>
+
+        <center>
+        <div class="event-detail">
+           <button class="button-sub">
+              <p>Book</p>
+           </button>
+        </div> 
+        </center>
+
+      </form>
+    </div>
+
+</div>
+
+  <script src="pack.js"></script>
+
+
+</body>
+</html>

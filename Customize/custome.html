@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customize</title>
+  <link rel="stylesheet" href="custome.css">
+</head>
+
+<body>
+
+<div class="area" >
+
+  <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+  </ul>
+
+  <div class="container">
+
+      <div class="title">
+        Customize Your Event
+      </div>
+
+      <hr>
+
+      <form action="#">
+        <div class="user-details">
+
+          <div class="input-box">
+            <span class="details">Full Name </span> 
+            <input type="text" placeholder="Enter Full Name" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Address </span> 
+            <input type="text" placeholder="City, street, house num" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Phone Number </span> 
+            <input type="tel" placeholder="Enter your Number" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Email </span> 
+            <input type="email" placeholder="Enter active Email" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details"> Event Date </span> 
+            <input type="date" placeholder="Enter your Number" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Details </span> 
+            <input type="text" placeholder="ex:time, theme, specifications..." required style="height: 70px;">
+          </div>
+
+          <div class="input-box">
+            <span class="details">Estimated Budget </span> 
+            <input type="text" placeholder="### EGP" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Estimated Guest Count </span> 
+            <input type="text" placeholder="Enter Count" required>
+          </div>
+        </div>
+
+        <div class="event-detail">
+
+          <div class="input-box">
+            <select name="event" id="event-type" required>
+              <option value="" disabled selected>What kind of event?</option>
+              <option value="wedding">Wedding</option>
+              <option value="engagement">Engagement</option>
+              <option value="birthday">Birthday</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="formal">Formal</option>
+            </select>
+          </div>
+
+          <button class="button">
+            <center><p>Book</p></center>
+          </button>
+        </div>
+      </form>
+    </div>
+</div>
+
+  <script src="custom.js"></script>
+</body>
+</html>
